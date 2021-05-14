@@ -1,0 +1,66 @@
+@import "./Home";
+@import "./Layout";
+@import "./Header";
+@import "./itemBox";
+@import "./Footer";
+@import "./Login";
+@import "./Dashboard";
+@import "./sendAppoitment";
+
+@font-face {
+  font-family: "byekan";
+  src: url("../public/fonts/BYekan.ttf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+$main-color: #1b0e4f;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "byekan" !important;
+  text-align: right;
+  line-height: 1.5;
+}
+
+a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+li {
+  list-style: none;
+}
+
+* {
+  box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(155, 155, 155, 0.5);
+}
+
+.bg {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to right top, #374057, #6f40c0, #49c0ac, #dfdfdf);
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+  overflow: hidden;
+}
+* {
+}
+*::-webkit-scrollbar {
+  width: 5px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(155, 155, 155, 0.5);
+  border-radius: 20px;
+}
+.row {
+  --bs-gutter-x: 0 !important;
+}

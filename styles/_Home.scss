@@ -1,0 +1,66 @@
+$main-color: #1b0e4f;
+$second-color: #1f7ee5;
+
+.header {
+  height: 50% !important;
+  &-content {
+    text-align: center;
+    h1 {
+      color: $main-color;
+      font-weight: bold;
+      font-size: 3.5rem;
+    }
+    h4 {
+      color: $second-color;
+    }
+  }
+  &-call {
+    color: $main-color;
+  }
+  &-img {
+    background: url("../public/images/dc.png");
+    height: 40vh !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.our-services {
+  h3 {
+    color: $main-color;
+    padding: 1rem 0;
+  }
+}
+.meet-us {
+  h2 {
+    color: $main-color;
+    font-weight: bold;
+  }
+  h4 {
+    color: $second-color;
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    &-content {
+      h1 {
+        color: $main-color;
+        font-weight: bold;
+        font-size: 2rem;
+      }
+      h4 {
+        font-size: 1.3rem;
+        color: $second-color;
+      }
+      h3{
+        font-size: 1.5rem;
+      }
+    }
+    &-img {
+      height: 50vh !important;
+    }
+  }
+}

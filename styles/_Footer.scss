@@ -1,0 +1,70 @@
+$main-color: #1b0e4f;
+$second-color: #1f7ee5;
+
+.f-container {
+  padding: 1rem 0;
+  .f-top {
+    h2 {
+      color: $main-color;
+      font-size: 2.5rem;
+      font-weight: 800;
+      a {
+        color: $second-color !important;
+      }
+    }
+    p {
+      color: rgb(19, 14, 14);
+    }
+  }
+  .f-bottom {
+    p {
+      color: $main-color;
+    }
+  }
+}
+.call {
+  input,
+  textarea {
+    text-align: right;
+    outline: none;
+    border: none;
+    padding: 0.5rem 2rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    &[type="submit"] {
+      background: $main-color;
+      color: #fff;
+      text-align: center !important;
+      margin: 0.8rem 0;
+      transition: all 0.9s;
+      &:hover {
+        background: $second-color;
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+@media screen and (max-width: 768px) {
+  .f-top {
+    h2 {
+      color: $main-color;
+      font-size: 1.5rem !important;
+      font-weight: 800;
+    }
+  }
+  input[type="submit"]{
+    width: 100% !important;
+    text-align: center !important;
+  }
+}

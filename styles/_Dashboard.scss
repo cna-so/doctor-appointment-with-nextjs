@@ -1,0 +1,25 @@
+$main-color: #1b0e4f;
+$second-color: #1f7ee5;
+
+* {
+  text-align: right !important;
+}
+h3 {
+  color: $main-color;
+}
+h5 {
+  color: $second-color;
+}
+.row-case {
+  background: linear-gradient(
+    to bottom left,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  backdrop-filter: blur(2rem);
+  border-radius: 2rem;
+  overflow-y: scroll;
+  margin: 1rem 0;
+  padding: 1rem;
+  width: 100%;
+}
