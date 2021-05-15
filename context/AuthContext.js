@@ -42,7 +42,6 @@ export const AuthProvider = ({ children }) => {
         },
         body: JSON.stringify({ identifier, password }),
       });
-      console.log(res)
       const data = await res.json();
       if (res.ok) {
         setUser(data.user);
